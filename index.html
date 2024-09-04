@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="process_form.php" method="post" enctype="multipart/form-data">
+            <label for="textBox">Text Box (100 Characters):</label><br>
+            <input type="text" id="textBox" name="textBox" maxlength="100" required><br><br>
+
+            <label>Radio Button:</label><br>
+            <input type="radio" id="hi" name="radioButton" value="Hi" required>
+            <label for="hi">Hi</label><br>
+            <input type="radio" id="hello" name="radioButton" value="Hello">
+            <label for="hello">Hello</label><br><br>
+
+            <label>Check Box:</label><br>
+            <input type="checkbox" id="world" name="checkBox[]" value="World!">
+            <label for="world">World!</label><br>
+            <input type="checkbox" id="web" name="checkBox[]" value="Web!">
+            <label for="web">Web!</label><br><br>
+
+            <label for="imageUpload">Upload Image:</label><br>
+            <input type="file" id="imageUpload" name="imageUpload" accept=".jpg, .jpeg, .png, .gif"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="button" value="View Database" onclick="window.location.href='view_database.php';">
+            <input type="button" value="Back to Form" onclick="window.location.href='form_page.php';">
+        </form>
+    </div>
+</body>
+</html>

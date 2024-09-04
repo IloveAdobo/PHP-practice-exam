@@ -1,0 +1,9 @@
+CREATE DATABASE neil_rentillo_db;
+USE neil_rentillo_db;
+CREATE TABLE neil_rentillo_form_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    textBox VARCHAR(100) NOT NULL,
+    radioButton VARCHAR(10) NOT NULL,
+    checkBox TEXT,
+    imagePath VARCHAR(255)
+);
